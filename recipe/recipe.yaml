@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: skillspector
-  version: "2.13.4"
+  version: "2.13.7"
   python_min: "3.12"
 
 package:
@@ -12,7 +12,7 @@ package:
 source:
   # not published on PyPI; built from the GitHub release tag
   url: https://github.com/NVIDIA/SkillSpector/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 0dae54aa348a2fc9dcfd870e4f73c1896c91eded7b4907a47ea596761acf3bfd
+  sha256: 786da6285fe40accaed7e1aaec10671c4eb1b379779a31043e3c0d455f2f2f3a
   patches:
     # upstream pins pywhatwgurl==0.1.1; conda-forge has 0.1.2 (same 0.1 API)
     - 0001-relax-pywhatwgurl-pin.patch
